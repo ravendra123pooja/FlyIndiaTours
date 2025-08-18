@@ -1,0 +1,17 @@
+D:\FLY_India_Tours_API\Model\bin\Debug\net8.0\Model.deps.json
+D:\FLY_India_Tours_API\Model\bin\Debug\net8.0\Model.dll
+D:\FLY_India_Tours_API\Model\bin\Debug\net8.0\Model.pdb
+D:\FLY_India_Tours_API\Model\obj\Debug\net8.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\FLY_India_Tours_API\Model\obj\Debug\net8.0\Model.AssemblyInfoInputs.cache
+D:\FLY_India_Tours_API\Model\obj\Debug\net8.0\Model.AssemblyInfo.cs
+D:\FLY_India_Tours_API\Model\obj\Debug\net8.0\Model.csproj.CoreCompileInputs.cache
+D:\FLY_India_Tours_API\Model\obj\Debug\net8.0\Model.dll
+D:\FLY_India_Tours_API\Model\obj\Debug\net8.0\refint\Model.dll
+D:\FLY_India_Tours_API\Model\obj\Debug\net8.0\Model.pdb
+D:\FLY_India_Tours_API\Model\obj\Debug\net8.0\ref\Model.dll
+D:\FLY_India_Tours_API\Model\bin\Debug\net8.0\Infrastructure.dll
+D:\FLY_India_Tours_API\Model\bin\Debug\net8.0\Utility.dll
+D:\FLY_India_Tours_API\Model\bin\Debug\net8.0\Infrastructure.pdb
+D:\FLY_India_Tours_API\Model\bin\Debug\net8.0\Utility.pdb
+D:\FLY_India_Tours_API\Model\obj\Debug\net8.0\Model.csproj.AssemblyReference.cache
+D:\FLY_India_Tours_API\Model\obj\Debug\net8.0\Model.csproj.CopyComplete

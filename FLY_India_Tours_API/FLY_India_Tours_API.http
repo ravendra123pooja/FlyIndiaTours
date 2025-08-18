@@ -1,0 +1,6 @@
+@FLY_India_Tours_API_HostAddress = http://localhost:5058
+
+GET {{FLY_India_Tours_API_HostAddress}}/a/
+Accept: application/json
+
+###

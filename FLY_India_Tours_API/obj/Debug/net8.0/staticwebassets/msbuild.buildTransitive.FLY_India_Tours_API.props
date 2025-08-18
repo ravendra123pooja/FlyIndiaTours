@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\FLY_India_Tours_API.props" />
+</Project>
