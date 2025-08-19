@@ -61,8 +61,7 @@ namespace Service.UserMasterService
                     Country = c.CountryName,
                     UserName=u.UserName,
                     City=u.City
-                }
-                ).ToListAsync();
+                }).ToListAsync();
 
                 response.Message = "User Master list fetched successfully";
                 response.StatusCode = HttpStatusCode.OK;

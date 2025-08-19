@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLY_India_Tours_API", "FLY_India_Tours_API\FLY_India_Tours_API.csproj", "{26C9AC6D-D638-434A-A676-BF6565D1EF47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FLY_India_Tours_API", "FLY_India_Tours_API\FLY_India_Tours_API.csproj", "{26C9AC6D-D638-434A-A676-BF6565D1EF47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{48CDA712-8492-4FB0-967B-A09A6BB1EBF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{48CDA712-8492-4FB0-967B-A09A6BB1EBF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dto", "Dto\Dto.csproj", "{D73089C2-81CF-41CB-9368-6FE6A81AA3A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dto", "Dto\Dto.csproj", "{D73089C2-81CF-41CB-9368-6FE6A81AA3A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{D879813E-D695-417E-9424-A2CDF6A3CCD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{D879813E-D695-417E-9424-A2CDF6A3CCD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{2FA9CE2A-164D-4556-9AA2-A9B39C35EFA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{2FA9CE2A-164D-4556-9AA2-A9B39C35EFA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{322A7530-CD91-4753-A208-84CA40DA55D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utility", "Utility\Utility.csproj", "{322A7530-CD91-4753-A208-84CA40DA55D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

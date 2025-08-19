@@ -14,6 +14,7 @@ using Service.CountryService;
 using Service.RoleService;
 using Service.UserMasterService;
 using Service.DesignationService;
+using Service.CompanyService;
 
 
 namespace FLY_India_Tours_API.Extensions
@@ -98,6 +99,7 @@ namespace FLY_India_Tours_API.Extensions
                 .AddScoped<IRoleService, RoleService>()
                  .AddScoped<IUserMasterService, UserMasterService>()
                 .AddScoped<IDesignationService, DesignationService>()
+                 .AddScoped<ICompanyService, CompanyService>()
             ;
         }
         public static IServiceCollection AddSessionWithOptions(this IServiceCollection services)
