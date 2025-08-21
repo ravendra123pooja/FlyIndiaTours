@@ -78,5 +78,56 @@ namespace Service.CompanyService
             }
 
         }
+
+
+
+        public async Task<APIResponse<CompanyDto>> GetById(int Id)
+        {
+            APIResponse<CompanyDto> response = new APIResponse<CompanyDto>();
+            try
+            {
+
+
+                var companydata = await (
+                     from cm in _flyIndiaDbContext.TblCompanies
+                     join c in _flyIndiaDbContext.Countries
+                    on cm.CountryId equals c.Id
+                     where c.Status == true
+                     select new CompanyDto
+                     {
+
+                         ID = cm.Id,
+                         PhotoPath = cm.PhotoPath,
+                         CompanyName = cm.CompanyName,
+                         Address = cm.Address,
+                         Pincode = cm.Pincode,
+                         State = cm.State,
+                         City = cm.City,
+                         Country = c.CountryName,
+                         MobileNo = cm.MobileNo,
+                         Email = cm.Email
+
+                     }
+                     ).FirstOrDefaultAsync(); 
+
+                response.Message = " Company list fetched successfully";
+                response.StatusCode = HttpStatusCode.OK;
+                response.Data = companydata;
+                response.Success = true;
+                return response;
+            }
+            catch (Exception)
+            {
+                response.Message = "Company list fetching issue";
+                response.StatusCode = HttpStatusCode.OK;
+
+                response.Success = false;
+                return response;
+
+            }
+
+        }
+
+    
     }
 }

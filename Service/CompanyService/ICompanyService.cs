@@ -11,5 +11,6 @@ namespace Service.CompanyService
     public interface ICompanyService
     {
         Task<APIResponse<List<CompanyDto>>> Get();
+        Task<APIResponse<CompanyDto>> GetById(int Id);
     }
 }
