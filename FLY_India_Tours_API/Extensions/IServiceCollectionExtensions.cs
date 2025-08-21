@@ -1,20 +1,22 @@
 ﻿using Infrastructure;
+using Infrastructure.EF;
 using Infrastructure.UnityOfWork.Interfaces;
 using Infrastructure.UnityOfWork.Repository;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Service;
-using System.Text;
-using Microsoft.Extensions.DependencyInjection;
 using Service.Account;
-using Service.JWTAuthenticationManager;
-using Infrastructure.EF;
+using Service.AgentService;
+using Service.CancellationService;
+using Service.CompanyService;
 using Service.CountryService;
+using Service.DesignationService;
+using Service.JWTAuthenticationManager;
 using Service.RoleService;
 using Service.UserMasterService;
-using Service.DesignationService;
-using Service.CompanyService;
+using System.Text;
 
 
 namespace FLY_India_Tours_API.Extensions
@@ -100,6 +102,8 @@ namespace FLY_India_Tours_API.Extensions
                  .AddScoped<IUserMasterService, UserMasterService>()
                 .AddScoped<IDesignationService, DesignationService>()
                  .AddScoped<ICompanyService, CompanyService>()
+                 .AddScoped<ICancellationService, CancellationService>()
+                  .AddScoped<IAgentService, AgentService>()
             ;
         }
         public static IServiceCollection AddSessionWithOptions(this IServiceCollection services)

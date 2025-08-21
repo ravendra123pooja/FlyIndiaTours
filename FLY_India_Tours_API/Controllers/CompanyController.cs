@@ -22,6 +22,12 @@ namespace FLY_India_Tours_API.Controllers
             var response = await _companyService.Get();
             return Ok(response);
         }
+        [HttpGet]
+        public async Task<IActionResult> GetCompanyByID(int Id)
+        {
+            var response = await _companyService.GetById(Id);
+            return Ok(response);
+        }
     }
 
 }
