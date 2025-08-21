@@ -39,14 +39,14 @@ namespace Service.CancellationService
             {
 
 
-                var cancellationList = await _flyIndiaDbContext.TblRoleMasters
-                 .Where(c => c.Status == true)
+                var cancellationList = await _flyIndiaDbContext.TblCancellationPolicies
+               
                  .Select(c => new CancellationDto
                  {
                      Id = c.Id,
-                     PerHundred = c.PerHundred,
-                     PerFifty = c.PerFifty,
-                     PerTwentyfive = c.PerTwentyfive
+                     PerHundred = Convert.ToInt16(c.PerHundred),
+                     PerFifty = Convert.ToInt16(c.PerFifty),
+                     PerTwentyfive = Convert.ToInt16(c.PerTwentyfive)
 
                  }).ToListAsync();
 

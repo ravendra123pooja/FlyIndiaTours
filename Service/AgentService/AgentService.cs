@@ -38,21 +38,22 @@ namespace Service.AgentService
             {
 
 
-                var agentList = await _flyIndiaDbContext.BookingAgents
-                 .Where(c => c.Status == true)
-                 .Select(c => new AgentDto
-                 {
-                     SrNo = Convert.ToInt16(c.Srno),
-                     agentCode = c.agentCode,
-                     bookingAgentName = c.bookingAgentName,
-                     businessName = c.businessName,
-                     natureOfBusinesss = c.natureOfBusinesss,
-                     city = c.city,
-                     CountryName = c.CountryName,
-                     status = c.status
-
-
-                 }).ToListAsync();
+                var agentList = await( 
+                    from a in _flyIndiaDbContext.BookingAgents
+                    join c in _flyIndiaDbContext.Countries
+                    on a.CountryId equals c.Id
+                    where a.Status == true
+                    select new AgentDto
+                    {
+                        SrNo = Convert.ToInt16(a.Srno),
+                        agentCode = a.AgentCode,
+                        bookingAgentName = a.BookingAgentName,
+                        businessName = a.BusinessName,
+                        natureOfBusinesss = a.NatureOfBusinesss,
+                        city = a.City,
+                        CountryName = c.CountryName,
+                     
+                    }).ToListAsync();
 
 
 

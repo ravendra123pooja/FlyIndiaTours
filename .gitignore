@@ -1,1 +1,30 @@
-tyft
+.vs/
+.gitignore
+**/bin/
+/bin/
+# Build results
+bin/
+obj/
+
+# Ignore specific Dto build folders
+Dto/bin/
+Dto/obj/
+
+# Ignore specific Dto build folders
+FLY_India_Tours_API/bin/
+FLY_India_Tours_API/obj/
+
+# Ignore specific Dto build folders
+Infrastructure/bin/
+Infrastructure/obj/
+
+# Ignore specific Dto build folders
+Model/bin/
+Model/obj/
+
+# Ignore specific Dto build folders
+Service/bin/
+Service/obj/
+Utility/bin/
+Utility/obj/
+
