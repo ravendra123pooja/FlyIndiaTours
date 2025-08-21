@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\FLY_India_Tours_API.props" />
-</Project>
