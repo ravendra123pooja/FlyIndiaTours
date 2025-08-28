@@ -9,10 +9,17 @@ using Microsoft.IdentityModel.Tokens;
 using Service;
 using Service.Account;
 using Service.AgentService;
+using Service.BillToCompanySerice;
 using Service.CancellationService;
+using Service.CityAttractionService;
 using Service.CompanyService;
+using Service.CorporateService;
 using Service.CountryService;
+using Service.CurrencyService;
 using Service.DesignationService;
+using Service.HotelListService;
+using Service.InvoiceAgentService;
+using Service.InvoiceHotelService;
 using Service.JWTAuthenticationManager;
 using Service.RoleService;
 using Service.UserMasterService;
@@ -104,6 +111,14 @@ namespace FLY_India_Tours_API.Extensions
                  .AddScoped<ICompanyService, CompanyService>()
                  .AddScoped<ICancellationService, CancellationService>()
                   .AddScoped<IAgentService, AgentService>()
+                 .AddScoped<ICurrencyService, CurrencyService>()
+                .AddScoped<IInvoiceHotelService, InvoiceHotelService>()
+                .AddScoped<IInvoiceAgentService, InvoiceAgentService>()
+                 .AddScoped<IBillToCompanyService, BillToCompanyService>()
+                  .AddScoped<ICorporateService, CorporateService>()
+                 
+                 .AddScoped<IHotelListService, HotelListService>()
+                 .AddScoped<ICityAttractionService, CityAttractionService>()
             ;
         }
         public static IServiceCollection AddSessionWithOptions(this IServiceCollection services)
