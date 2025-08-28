@@ -92,7 +92,7 @@ namespace Service.CompanyService
                      from cm in _flyIndiaDbContext.TblCompanies
                      join c in _flyIndiaDbContext.Countries
                     on cm.CountryId equals c.Id
-                     where c.Status == true
+                     where c.Status == true && c.Id == Id
                      select new CompanyDto
                      {
 
