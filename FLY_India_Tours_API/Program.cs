@@ -15,7 +15,15 @@ builder.Host.ConfigureDefaults(args).ConfigureAppConfiguration((app, config) =>
     AddJsonFile($"appsettings.{_Environment}.json", optional: false, reloadOnChange: true);
     config.AddEnvironmentVariables();
 });
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy",
+        policy => policy
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .Build());
+});
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDistributedMemoryCache();

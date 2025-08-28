@@ -15,6 +15,7 @@ using Service.CountryService;
 using Service.DesignationService;
 using Service.JWTAuthenticationManager;
 using Service.RoleService;
+using Service.ToursDisplay;
 using Service.UserMasterService;
 using System.Text;
 
@@ -104,6 +105,7 @@ namespace FLY_India_Tours_API.Extensions
                  .AddScoped<ICompanyService, CompanyService>()
                  .AddScoped<ICancellationService, CancellationService>()
                   .AddScoped<IAgentService, AgentService>()
+                  .AddScoped<IToursDisplayService, ToursDisplayService>()
             ;
         }
         public static IServiceCollection AddSessionWithOptions(this IServiceCollection services)
